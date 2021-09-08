@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./Asset/css/style.css" />
+    <script src="./script.js" defer></script>
+    <title>Music hunt</title>
+  </head>
+  <body>
+    <div class="container">
+      <header>
+        <div class="title">Music hunt</div>
+        <button class="theme-switch__btn" id="theme-switcher">
+          <i id="themeIcon" class="fas fa-moon fa-2x"></i>
+        </button>
+      </header>
+
+      <section id="music-container" class="music-container">
+     
+          <!-- <div class="music-container__list">
+            <div class="music-details">
+              <div class="music-thump__data">
+                <small class="number" id="number">1</small>
+                <img
+                  width="100"
+                  height="100"
+                  src="./Asset/Images/Kun faya kun.jpg"
+                  alt="cover image"
+                />
+                <div class="music-info">
+                  <p class="music-title">Kun faya kun</p>
+                  <p class="music-bio">AR rahman, Javed</p>
+                </div>
+              </div>
+              <div class="minutes">7:58</div>
+            </div>
+          </div> -->
+
+      </section>
+
+      <audio id="audio"></audio>
+
+      <footer class="player" id="player">
+        <div class="player-wrapper">
+          <div class="music-player__functions">
+            <img
+              id="music-cover"
+              alt="cover image"
+            />
+            <div class="control-container">
+              <div class="control-btns">
+                <button class="prev btn" id="prev">
+                  <i class="fas fa-backward fa-2x"></i>
+                </button>
+                <button class="play btn" id="play">
+                  <i class="far fa-play-circle fa-3x"></i>
+                </button>
+                <button class="next btn" id="next">
+                  <i class="fas fa-forward fa-2x"></i>
+                </button>
+              </div>
+              <div class="progress-container" id="progress-container">
+                <div class="progress-bar" id="progress-bar"></div>
+              </div>
+            </div>
+          </div>
+          <div class="misc">
+            <marquee direction="right" class="active-song" id="music-title">Kun faya kun</marquee>
+          </div>
+        </div>
+        
+      </footer>
+    </div>
+  </body>
+</html>

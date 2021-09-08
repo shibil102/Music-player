@@ -1,0 +1,175 @@
+:root {
+  --primary: #ffffff;
+  --font: #11052c;
+  --progress: #3d087b;
+  --progress-info: #6e85b2;
+}
+
+:root.dark {
+  --primary: #2d2424;
+  --font: #fff8e5;
+  --progress: #5c3d2e;
+  --progress-info: #b85c38;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  color: var(--font);
+}
+
+body {
+    background: var(--primary);
+    overflow-Y: hidden;
+}
+
+header {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  width: 90%;
+  margin: 0 auto;
+  height: 4em;
+}
+
+header .title {
+  font-family: "Pacifico", sans-serif;
+  font-size: 1.25rem;
+}
+
+header .theme-switch__btn {
+  background: none;
+  border: 0;
+}
+
+.music-container {
+  overflow-y: scroll;
+}
+
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+}
+
+.music-container__list {
+    width: 92%;
+    margin: 2em auto;
+}
+
+.music-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.music-thump__data{
+    display: flex;
+    align-items: center;
+}
+
+.music-thump__data img {
+    margin-left: 1em;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 4px solid var(--font);
+}
+
+.music-thump__data small {
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.music-info {
+    margin-left: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.music-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.player {
+  z-index: 10;
+  height: 7em;
+  border: 3px solid var(--font);
+  display: none;
+}
+
+.playing {
+    display: block;
+}
+
+.player-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.music-player__functions {
+  display: flex;
+  align-items: center;
+  flex: 1;
+}
+
+.music-player__functions img {
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+.control-container {
+  margin-left: 10px;
+  flex: 1;
+}
+
+.control-btns {
+  width: 90%;
+  display: flex;
+  justify-content: start;
+}
+
+.control-btns .btn {
+  margin: 0 25px 0 0;
+  background-color: transparent;
+  border: 0;
+}
+
+.control-btns .btn:focus {
+  outline: 0;
+}
+
+.progress-container {
+  background: var(--progress);
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 15px 0;
+  height: 4px;
+  width: 90%;
+}
+
+.progress-bar {
+  background-color: var(--progress-info);
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}
+
+.misc {
+  height: 100%;
+  margin-top: 1em;
+  width: 100%;
+}
+
+.misc .active-song {
+  font-size: 16px;
+  font-weight: 600;
+}
